@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,61 +6,93 @@ body {
 }
 
 header {
-    background-color: rgb(173, 240, 237);
-    color: white;
+    background: #333;
+    color: #fff;
     padding: 10px 0;
-    text-align: center;
 }
 
-header nav ul {
-    list-style-type: none;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav ul li {
+    margin-left: 20px;
 }
 
-header nav ul li a {
-    color: rgb(169, 120, 46);
+nav ul li a {
+    color: #fff;
     text-decoration: none;
 }
 
-main {
-    padding: 20px;
+#hero {
+    background: #f4f4f4;
+    padding: 60px 0;
     text-align: center;
 }
 
-.section-home {
-    background-color: #0692f0;
-    padding: 50px 0;
+#hero h2 {
+    margin: 0 0 20px;
 }
 
-.section-about,
-.section-services {
-    padding: 50px 0;
+#hero p {
+    margin: 0 0 20px;
 }
 
-button {
+.btn {
+    display: inline-block;
     padding: 10px 20px;
-    background-color: #bde3f3;
-    color: rgba(20, 20, 20, 0.281);
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.feature {
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #80dff4;
-}
-
 footer {
-    background-color: #c8c8c8;
-    color: white;
-    text-align: center;
+    background: #333;
+    color: #fff;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
 }
